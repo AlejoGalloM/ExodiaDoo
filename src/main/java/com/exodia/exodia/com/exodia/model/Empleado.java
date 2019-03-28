@@ -18,6 +18,5 @@ public class Empleado extends Persona {
         this.horasExtra = horasExtra;
         this.pagoHora = pagoHora;
         this.comisiones = comisiones;
-
     }
 }
