@@ -14,4 +14,5 @@ public class Persona {
         this.identificacion = identificacion;
         this.fechaNacimiento = fechaNacimiento;
     }
+
 }
