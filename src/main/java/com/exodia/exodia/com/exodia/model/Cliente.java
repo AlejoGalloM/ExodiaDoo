@@ -10,5 +10,12 @@ public class Cliente extends Persona {
         this.fechaRegistro = fechaRegistro;
     }
 
+    public BaseCalendar.Date getFechaRegistro() {
+        return fechaRegistro;
+    }
+
+    public void setFechaRegistro(BaseCalendar.Date fechaRegistro) {
+        this.fechaRegistro = fechaRegistro;
+    }
 }
 
