@@ -20,13 +20,9 @@ public class Empleado extends Persona {
         this.comisiones = comisiones;
     }
 
-    public String getSeguro() {
-        return seguro;
-    }
+    public String getSeguro() {return seguro; }
 
-    public double getHorasTrabajadas() {
-        return horasTrabajadas;
-    }
+    public double getHorasTrabajadas() { return horasTrabajadas; }
 
     public void setHorasTrabajadas(double horasTrabajadas) {
         this.horasTrabajadas += horasTrabajadas;
@@ -36,9 +32,7 @@ public class Empleado extends Persona {
         return horasExtra;
     }
 
-    public void setHorasExtra(double horasExtra) {
-        this.horasExtra += horasExtra;
-    }
+    public void setHorasExtra(double horasExtra) { this.horasExtra += horasExtra; }
 
     public double getPagoHora() {
         return pagoHora;
