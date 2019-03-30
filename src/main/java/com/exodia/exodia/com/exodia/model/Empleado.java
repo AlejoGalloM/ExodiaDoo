@@ -24,16 +24,12 @@ public class Empleado extends Persona {
         return seguro;
     }
 
-    public void setSeguro(String seguro) {
-        this.seguro = seguro;
-    }
-
     public double getHorasTrabajadas() {
         return horasTrabajadas;
     }
 
     public void setHorasTrabajadas(double horasTrabajadas) {
-        this.horasTrabajadas = horasTrabajadas;
+        this.horasTrabajadas += horasTrabajadas;
     }
 
     public double getHorasExtra() {
@@ -41,7 +37,7 @@ public class Empleado extends Persona {
     }
 
     public void setHorasExtra(double horasExtra) {
-        this.horasExtra = horasExtra;
+        this.horasExtra += horasExtra;
     }
 
     public double getPagoHora() {

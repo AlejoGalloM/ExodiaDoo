@@ -1,10 +1,10 @@
 package com.exodia.exodia.com.exodia.facturacion;
 
-public class DestalleFactura {
+public class DetalleFactura {
     private double id;
     private Factura factura;
 
-    public DestalleFactura(double id, Factura factura) {
+    public DetalleFactura(double id, Factura factura) {
         this.id = id;
         this.factura = factura;
     }
