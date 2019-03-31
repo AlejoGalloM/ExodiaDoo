@@ -1,9 +1,10 @@
-package com.exodia.exodia.com.exodia.model;
+package Exodia.com.exodia.model;
 
+import Exodia.com.exodia.pago.CalcularPago;
 import sun.util.calendar.BaseCalendar;
 
 
-public class Empleado extends Persona {
+public class Empleado extends Persona implements CalcularPago {
 
     private String seguro;
     private double horasTrabajadas;
@@ -48,5 +49,12 @@ public class Empleado extends Persona {
 
     public void setComisiones(double comisiones) {
         this.comisiones = comisiones;
+    }
+
+
+    @Override
+    public double pagar(double horaPago, double horasTrabajadas) {
+        double ValorPago = horasTrabajadas * horaPago;
+        return ValorPago;
     }
 }

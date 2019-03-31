@@ -1,4 +1,4 @@
-package com.exodia.exodia.com.exodia.facturacion;
+package Exodia.com.exodia.facturacion;
 
 public class DetalleFactura {
     private double id;

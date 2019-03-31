@@ -1,4 +1,4 @@
-package com.exodia.exodia;
+package Exodia;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

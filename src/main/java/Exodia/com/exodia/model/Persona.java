@@ -1,4 +1,4 @@
-package com.exodia.exodia.com.exodia.model;
+package Exodia.com.exodia.model;
 
 import sun.util.calendar.BaseCalendar;
 

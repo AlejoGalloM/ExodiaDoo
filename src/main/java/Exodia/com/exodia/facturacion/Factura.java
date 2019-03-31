@@ -1,6 +1,6 @@
-package com.exodia.exodia.com.exodia.facturacion;
+package Exodia.com.exodia.facturacion;
 
-import com.exodia.exodia.com.exodia.model.Cliente;
+import Exodia.com.exodia.model.Cliente;
 
 public class Factura {
     private double idFactura;
