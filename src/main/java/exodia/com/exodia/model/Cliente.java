@@ -1,9 +1,14 @@
-package Exodia.com.exodia.model;
+package exodia.com.exodia.model;
 
+import exodia.com.exodia.facturacion.Factura;
+import exodia.com.exodia.facturacion.Servicio;
 import sun.util.calendar.BaseCalendar;
+
+import java.util.ArrayList;
 
 public class Cliente extends Persona {
     private BaseCalendar.Date fechaRegistro;
+    private ArrayList<Factura> trabajosQueLeHanRealizado;
 
     public Cliente(String nombre, String apellido, String identificacion, BaseCalendar.Date fechaNacimiento, BaseCalendar.Date fechaRegistro) {
         super(nombre, apellido, identificacion, fechaNacimiento);
@@ -14,8 +19,8 @@ public class Cliente extends Persona {
         return fechaRegistro;
     }
 
-    public void setFechaRegistro(BaseCalendar.Date fechaRegistro) {
-        this.fechaRegistro = fechaRegistro;
+    public ArrayList<Factura> getTrabajosQueLeHanRealizado() {
+        return trabajosQueLeHanRealizado;
     }
 }
 

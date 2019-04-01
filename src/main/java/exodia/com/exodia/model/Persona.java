@@ -1,4 +1,4 @@
-package Exodia.com.exodia.model;
+package exodia.com.exodia.model;
 
 import sun.util.calendar.BaseCalendar;
 
@@ -14,6 +14,7 @@ public class Persona {
         this.identificacion = identificacion;
         this.fechaNacimiento = fechaNacimiento;
     }
+
 
     public String getNombre() {
         return nombre;
