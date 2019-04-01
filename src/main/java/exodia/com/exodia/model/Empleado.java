@@ -1,5 +1,7 @@
 package exodia.com.exodia.model;
 
+import exodia.com.exodia.facturacion.DetalleFactura;
+import exodia.com.exodia.facturacion.Factura;
 import exodia.com.exodia.facturacion.Servicio;
 import sun.util.calendar.BaseCalendar;
 
@@ -36,8 +38,8 @@ public class Empleado extends Persona {
         }
     }
 
-    public void realizarFacturación(){
-
+    public void realizarFacturación(DetalleFactura trabajoAFacturar, Cliente cliente, double idfactura){
+        cliente.agregartrabajos(new Factura(idfactura,trabajoAFacturar));
     }
 
     public double getPagoHoraExtra() { return pagoHoraExtra; }

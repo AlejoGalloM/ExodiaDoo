@@ -1,5 +1,8 @@
 package exodia.com.exodia.gestiones;
 
+import exodia.com.exodia.facturacion.DetalleFactura;
+import exodia.com.exodia.facturacion.Servicio;
+import exodia.com.exodia.model.Cliente;
 import exodia.com.exodia.model.Empleado;
 import exodia.com.exodia.model.Persona;
 import sun.util.calendar.BaseCalendar;
@@ -53,5 +56,15 @@ public class Administrador extends Empleado {
         }
             return comisionExitosa;
         }
+
+    @Override
+    public void agregarTrabajoRealizado(Servicio trabajoRealizado) {
+        super.agregarTrabajoRealizado(trabajoRealizado);
     }
+
+    @Override
+    public void realizarFacturación(DetalleFactura trabajoAFacturar, Cliente cliente, double idfactura) {
+        super.realizarFacturación(trabajoAFacturar, cliente, idfactura);
+    }
+}
 

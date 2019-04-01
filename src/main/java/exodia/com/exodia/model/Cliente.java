@@ -22,5 +22,9 @@ public class Cliente extends Persona {
     public ArrayList<Factura> getTrabajosQueLeHanRealizado() {
         return trabajosQueLeHanRealizado;
     }
+
+    public void agregartrabajos( Factura trabajo){
+        trabajosQueLeHanRealizado.add(trabajo);
+    }
 }
 
