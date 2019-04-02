@@ -20,7 +20,7 @@ public class Administrador extends Empleado {
     }
 
     public boolean registrarEmpleado(Empleado empleado){
-        boolean registroExitoso=false;
+        boolean registroExitoso = false;
         if(listaEmpleados==null){
             listaEmpleados = new ArrayList<>();
             listaEmpleados.add(empleado);
